@@ -1,0 +1,7 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Handle subpages by redirecting all requests to index.html, except for actual files/folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
