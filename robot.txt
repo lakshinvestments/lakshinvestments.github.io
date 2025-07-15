@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /private/  # Do not crawl the private section
+Allow: /public/      # Allow access to the public section
 Sitemap: https://lakshinvestments.in/sitemap.xml
